@@ -1,0 +1,12 @@
+<h1>Create Your Knight!</h1>
+<%=form_for @knight	do |f|%>
+<%=f.label :first_name%>
+<%=f.text_field :first_name%>
+<%=f.label :last_name%>
+<%=f.text_field :last_name%>
+<%=f.label :weapon%>
+<%=f.text_field :weapon%>
+<%=f.label :king_id%>
+<%=f.collection_select(:king_id, King.all, :id, :full_name)%>
+<%= f.submit%>
+<%end%>

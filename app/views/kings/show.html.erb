@@ -1,0 +1,8 @@
+<h1><%= @king.full_name %></h1>
+<h3>of House <%= @king.last_name %></h3>
+<h4>Generation <%= @king.generation %></h4>
+<p><%= @king.first_name %> <%= @king.life_status %></p>
+
+<%= button_to 'Delete', king_path, method: :delete %>
+
+<%= button_to 'Edit', edit_king_path, method: :get %>

@@ -1,0 +1,6 @@
+<h1>The Knights of Westeros	</h1>
+<ul>
+	<% @knights.each do |knight| %>
+		<li><%= link_to knight.full_name, knight_path(knight) %></li>
+	<% end %>
+</ul>

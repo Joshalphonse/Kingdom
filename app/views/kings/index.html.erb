@@ -1,0 +1,11 @@
+<h1>The Kings of Westeros</h1>
+<ul>
+	<% @kings.each do |king| %>
+		<li><%= link_to king.full_name, king_path(king) %></li>
+	<% end %>
+</ul>
+
+
+
+
+<%= link_to 'Create Your King', new_king_path %>
